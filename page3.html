@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY CHILL VIBES PLAYLIST</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .background-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .video-item {
+            position: relative;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .video-item iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .video-caption {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+    
+        .button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: rgb(0, 0, 0);
+            background-color: #ff69b4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+    <video class="background-video" autoplay muted loop>
+        <source src="images/japans-majestic-peaks-and-cherry-blossoms.960x540.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <h1>MY CHILL VIBES PLAYLIST</h1>
+        <div class="video-grid">
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/HMyGb8mpZDE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video-caption">
+                    <p><strong>Title:</strong> Mean It</p>
+                    <p><strong>Artist:</strong> Lauv & Lany</p>
+                </div>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/o_SYttJm0SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video-caption">
+                    <p><strong>Title:</strong> Love Myself</p>
+                    <p><strong>Artist:</strong> BTS</p>
+                </div>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/3ZSsFItP6fQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video-caption">
+                    <p><strong>Title:</strong> Five More Minutes</p>
+                    <p><strong>Artist:</strong> Jonas Brothers</p>
+                </div>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/ApXoWvfEYVU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video-caption">
+                    <p><strong>Title:</strong> Sunflower</p>
+                    <p><strong>Artist:</strong> Post Malone & Swae Lee </p>
+                </div>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/E0Yie1JWgak" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video-caption">
+                    <p><strong>Title:</strong> Darari</p>
+                    <p><strong>Artist:</strong> TREASURE</p>
+                </div>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/NU5mFeTcJSo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video-caption">
+                    <p><strong>Title:</strong> Polaroid Love</p>
+                    <p><strong>Artist:</strong> ENHYPEN</p>
+                </div>
+            </div>
+            <button class="button" onclick="location.href='page2.html'">Previous</button>
+            <button class="button" onclick="location.href='page4.html'">Next</button>
+            </div>
+
+        </div>
+
+    </div><footer>
+        <p>&copy;<b>NUR ROS AMALIN 2024, MADE FOR IML470 ASSIGNMENT,2024.</b></p></footer>
+
+  
+    
+</body>
+</html>
+</body>
+</html>

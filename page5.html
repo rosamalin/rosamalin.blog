@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE SUNSET IS BEAUTIFUL, ISN'T IT?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        #background-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+        .gallery-container {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px; 
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+        .content img {
+            border: 5px solid #fffafe; 
+            border-radius: 20px; 
+        }
+        .navigation {
+            display: flex;
+            justify-content: center;
+        }
+        .navigation button {
+            padding: 10px 20px;
+            font-size: 24px;
+            background-color: rgb(255, 255, 255);
+            border: none;
+            cursor: pointer;
+            margin: 0 10px; 
+        }
+        .navigation button:hover {
+            background-color: rgb(11, 10, 10);
+            color: white;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: rgb(0, 0, 0);
+            background-color: #ff69b4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="images/ssvid.net - SunSet Animation_1080p.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <h1>THE SUNSET IS BEAUTIFUL, ISN'T IT?</h1>
+    <div class="gallery-container">
+        <div class="content active">
+            <img src="images/photo_2024-06-06_21-26-57.jpg" alt="SUNSET VIDEO 1" width="500" height="500">
+        </div>
+        <div class="content">
+            <img src="images/photo_2024-06-06_21-29-47.jpg" alt="sunset Picture 2" width="500" height="500">
+        </div>
+        <div class="content">
+            <img src="images/photo_2024-06-07_01-24-03.jpg" alt="sunset Picture 3" width="500" height="500">
+        </div>
+        <div class="content">
+            <img src="images/photo_2024-06-07_01-24-09.jpg" alt="sunset Picture 4" width="500" height="500">
+        </div>
+
+        <div class="navigation">
+            <button id="prevBtn">&lt;</button>
+            <button id="nextBtn">&gt;</button>
+        </div>
+    </div>
+    <div>
+        <button class="button" onclick="location.href='page4.html'">Previous</button>
+
+
+    </div>
+
+    <script>
+        const contents = document.querySelectorAll('.content');
+        let currentIndex = 0;
+
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            contents[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % contents.length;
+            contents[currentIndex].classList.add('active');
+        });
+
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            contents[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex - 1 + contents.length) % contents.length;
+            contents[currentIndex].classList.add('active');
+        });
+    </script>
+</body>
+<footer>
+    <p>&copy;<b>NUR ROS AMALIN 2024, MADE FOR IML470 ASSIGNMENT,2024.</b></p></footer>
+
+
+</body>
+</html>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WELCOME TO MY WEBPAGE</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    color: #d8017b;
+    position: relative;
+    height: 100vh; 
+  }
+
+  .left-content {
+    width: 110%;
+    z-index: 1; 
+    padding: 20px;
+  }
+
+  .right-content {
+    width: 50%;
+    text-align: Center;
+    z-index: 1; 
+    padding: 20px;
+  }
+
+  .circle-image {
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 8px solid #000000; 
+  }
+
+  .title {
+    font-size: 100px;
+    margin-bottom: 110px;
+  }
+
+  .button {
+    background-color: rgba(255, 76, 234, 0.8); 
+    padding: 30px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+  }
+
+  .button:hover {
+    background-color: rgba(255, 255, 255, 1); 
+  }
+
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-content">
+      <h1 class="title">WELCOME TO MY WEBPAGE</h1>
+      <button class="button" onclick="location.href='page2.html'">Let's Get Started</button>
+
+      
+    </div>
+    <div class="right-content">
+      <img src="images/amalins.JPG" alt="ros amalin" class="circle-image">
+    </div>
+    <video autoplay muted loop>
+      <source src=".vscode/doggie-corgi.960x540.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <footer>
+    <p>&copy;<b>NUR ROS AMALIN 2024, MADE FOR IML470 ASSIGNMENT,2024.</b></p></footer>
+    <body>
+      <div class="page page1" style="display: flex;">
+      
+          
+</body>
+</html>
+
