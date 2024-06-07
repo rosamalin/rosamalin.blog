@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY FAVORITE KDRAMA AND OST SONG</title>
+    <style>
+        body {
+            background: url('images/pexels-pixabay-414660.jpg') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: rgb(0, 0, 0);
+            margin: 0;
+            padding: 0;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .gallery .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            width: 250px;
+        }
+        .gallery img {
+            width: 250px; /* Membesarkan gambar */
+            height: 250px; /* Membesarkan gambar */
+            border: 5px solid #333;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        .gallery p {
+            margin: 5px 0;
+            padding: 5px;
+            background-color: #f0f0f0;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            color: #333;
+        }
+        audio {
+            display: none;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: rgb(0, 0, 0);
+            background-color: #ff69b4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            margin: 20px;
+        }
+        .button:hover {
+            background-color: #ff1493;
+        }
+        footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>MY FAVORITE KDRAMA AND OST SONG</h1>
+
+    <div class="gallery">
+        <div class="item">
+            <img src="images/RrZozf (1).jpg" alt="Gambar 1" onclick="playMusic('[MV] 먼데이 키즈 (Monday Kiz), 펀치 (Punch) - Another Day (Hotel Del Luna (호텔 델루나) OST Part.1) (320).mp3')">
+            <p>Hotel Del Luna</p>
+            <p>"Another Day" - Monday Kiz, Punch</p>
+        </div>
+        <div class="item">
+            <img src="images/Lovely_Runner-p1.jpg" alt="lr" onclick="playMusic('Sudden Shower (320).mp3')">
+            <p>Lovely Runner</p>
+            <p>"Sudden Shower" - ECLIPSE</p>
+        </div>
+        <div class="item">
+            <img src="images/sc.jpg" alt="Gambar 3" onclick="playMusic('[달의 연인 - 보보경심 려 OST Part 2] 로꼬, 펀치 (Loco, Punch) - Say Yes MV (320).mp3')">
+            <p>Moon Lovers: Scarlet Heart Ryeo</p>
+            <p>"Say Yes" - Loco, Punch</p>
+        </div>
+        <div class="item">
+            <img src="images/king.jpg" alt="Gambar 4" onclick="playMusic('Confess To You (320).mp3')">
+            <p>King The Land</p>
+            <p>"Confess To You" - Lim Kim</p>
+        </div>
+    </div>
+
+    <audio id="audioPlayer" controls>
+        <source id="audioSource" src="" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        function playMusic(musicFile) {
+            const audioPlayer = document.getElementById('audioPlayer');
+            const audioSource = document.getElementById('audioSource');
+            audioSource.src = musicFile;
+            audioPlayer.load();
+            audioPlayer.play();
+        }
+    </script>
+
+    <div>
+        <button class="button" onclick="location.href='page3.html'">Previous</button>
+        <button class="button" onclick="location.href='page5.html'">Next</button>
+    </div>
+
+    <footer>
+        <p>&copy;<b>NUR ROS AMALIN 2024, MADE FOR IML470 ASSIGNMENT, 2024.</b></p>
+    </footer>
+    
+</body>
+</html>
